@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+body {
+  --anonymous-pro: "Anonymous Pro", monospace;
+  --anton: "Anton", sans-serif;
+  --gabarito: "Gabarito", cursive;
+  --background: #5ce1e6;
+}
+main {
+  height: 100%;
+  background: var(--background);
+  display: flex;
+  padding: 0 1em;
+}
+img {
+  height: 50vh;
+  width: 100%;
+}
+
+/* WHITE LINE */
+
+.white-line {
+  height: 100%;
+  background: white;
+  flex: 1 1 15vw;
+}
+
+section:not(.white-line) {
+  flex: 2 2 75vw;
+}
+/* SECTION # 2 */
+
+section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+.text-section {
+  height: 50vh;
+  width: 35vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 0 1em;
+}
+h2 {
+  font-family: var(--anonymous-pro);
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+p {
+  font-family: var(--anonymous-pro);
+  line-height: 1.5em;
+}
+
+/* SECTION #3 */
+section:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  font-family: var(--gabarito);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 2px;
+}
+figure {
+  display: flex;
+  position: relative;
+}
+
+figure::after {
+  content: "música Club";
+  position: absolute;
+  bottom: 5%;
+  right: 23%;
+  width: 100px;
+  color: white;
+  font-size: 1.4rem;
+  font-family: var(--anton);
+  text-align: center;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  z-index: 2;
+}
