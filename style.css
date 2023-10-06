@@ -27,7 +27,7 @@ img {
 
 .white-line {
   background: white;
-  flex: 1 1 15vw;
+  flex: 1 1 7em;
 }
 
 section:not(.white-line) {
