@@ -16,6 +16,7 @@ main {
   background: var(--background);
   display: flex;
   padding: 0 1em;
+  width: 1000px;
 }
 img {
   height: 50vh;
